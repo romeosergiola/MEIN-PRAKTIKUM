@@ -1,0 +1,306 @@
+body {
+    margin: 0;
+}
+h1 {
+    font-size: 2vw;
+    color: azure;
+}
+
+.grid * {
+    font-family: Elms Sans;
+}
+.grid {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    grid-template-rows: auto 1fr auto;
+    height: 100vh;
+    grid-gap: 4px;
+}
+
+
+header {
+    background-color: #05386B;
+    grid-column: 1 / -1;
+    padding: 10px;
+    padding-left: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+}
+
+
+.logos {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: right;
+}
+#apes {
+    max-width: 13vw;
+}
+#LOGO {
+    max-width: 25vw;
+}
+
+#sun {
+    max-width: 5vw;
+}
+.head-imgs {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+
+
+aside {
+    text-align: center;
+    background-color:  #05386B;
+    
+}
+aside>div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.5vw;
+    gap: 3vw;
+}
+aside>div>a {
+    color: azure;
+    text-decoration: none;
+    padding: 1.5vw;
+    border-radius: 10px;
+    border: 2.5px solid;
+}
+
+
+
+main {
+    background-color: #EDF5E1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 1fr;
+    grid-template-areas: 
+        "flag flag"
+        "left right";
+}
+
+.left-content {
+    grid-area: left;
+    padding: 2vw;
+}
+.right-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    grid-area: right;
+    padding: 2vw;
+    
+}
+.right-content > div > img {
+    max-height: 12vw;
+}
+.flagge {
+    grid-area: flag;
+    grid-column: 1 / -1;
+}
+.flagge>img {
+    width:100%;
+    height: 10vh;
+}
+.html {
+    border: 2.5px solid;
+    background-color: red;
+    border-radius: 2vw;
+    
+    
+}
+.css {
+    border: 2.5px solid;
+    border-radius: 2vw;
+    background-color: rgb(96, 96, 255);
+}
+.right-content > div {
+    font-weight: 700;
+    padding: 1.5vw;
+}
+
+.footer-items>div>img {
+    max-width: 2vw;
+}
+.footer-items>div {
+    display: flex;
+    align-items: center;
+
+}
+.footer-items {
+    display: flex;
+    width: 100vw;
+    justify-content: space-around;
+}
+footer {
+    background-color: #379683;
+    display: flex;
+    grid-column: 1 / -1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1220px) {
+    .grid {
+        grid-template-columns: 170px 1fr;
+    }
+    aside>div>a  {
+        font-size: 2vw;
+    }
+    .right-content {
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+    }
+    .right-content>div>img {
+        max-height: 15vw;
+    }
+    .right-content > div {
+        font-size: 20px;
+    }
+    .left-content {
+        font-size: 2vw;
+    }
+}
+
+
+@media (max-width: 1080px) {
+    .grid {
+        grid-template-columns: 170px 1fr;
+    }
+    aside>div>a  {
+        font-size: 2vw;
+    }
+}
+
+
+
+
+
+
+
+
+@media (max-width: 780px) {
+    .grid {
+        grid-template-columns: 140px 1fr;
+    }
+    aside>div>a  {
+        font-size: 2.5vw;
+    }
+    .right-content>div>img {
+        max-height: 20vw;
+    }
+    .right-content > div {
+        font-size: 12px;
+    }
+}
+
+
+
+
+
+
+@media (max-width: 560px) {
+    .grid {
+        grid-template-columns: 120px 1fr;
+    }
+    aside>div>a  {
+        font-size: 3vw;
+    }
+    .left-content > p {
+        font-size: 2.5vw;
+    }
+    .left-content > h2 {
+        font-size: 4vw;
+    }
+    .left-content {
+        max-width: 80%;
+    }
+    .right-content > div {
+        font-size: 2vw;
+    }
+
+
+
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 500px) {
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto 1fr;
+        
+    }
+    aside>p {
+        display: none;
+    }
+    aside>div {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 5px;
+        gap: 4vw;
+    }
+    aside>div>a  {
+        font-size: 4.5vw;
+    }
+
+    h1 {
+        font-size: 3vw;
+    }
+    header {
+        padding: 5px;
+        padding-left: 10px;
+    }
+    .right-content>div>img {
+        max-height: 30vw;
+    }
+    
+}
+
