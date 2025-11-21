@@ -56,6 +56,7 @@ header {
 aside {
     text-align: center;
     background-color:  #05386B;
+    padding-bottom: 1.5vh;
     
 }
 aside>div {
@@ -78,6 +79,7 @@ aside>div>a {
 main {
     background-color: #EDF5E1;
     display: grid;
+    overflow-y: scroll;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto 1fr;
     grid-template-areas: 

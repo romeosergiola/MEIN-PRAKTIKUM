@@ -70,68 +70,65 @@ aside > div > a {
 }
 
 main {
-  background-color: #edf5e1;
-  overflow-y: scroll;
+  padding-top: 2vh;
+  background-color: #2f2fa2;
+  color: azure;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: auto 1fr auto;
-  row-gap: 3vw;
-  grid-template-areas: 
-    "head head head"
-    "left central right"
-    "aufbau aufbau aufbau";
+  grid-template-columns: 1fr 1fr;
+  overflow-y: scroll;
+  grid-template-areas:
+    "left right"
+    "infoma infoma"
+    "logoHR logoHR"
+    "dvelop dvelop"
+    "zaehler zaehler";
+  row-gap: 10vh;
+  padding-left: 1.5vw;
+  padding-right: 1.5vw;
 }
 
-.central-content {
-  text-align: center;
-  padding: 1.5vw;
-  grid-area: central;
+.left-content {
+  padding-left: 1.5vh;
+  max-width: 40vw;
+  grid-area: left;
+  align-content: center;
 }
 .right-content {
-  text-align: right;
+  display: flex;
+  align-items: baseline;
+  justify-content: right;
   grid-area: right;
 }
-.head-content {
-  grid-area: head;
-  padding-left: 1.5vw;
-}
-.head-content>h2 {
-  text-align: center;
-  font-weight: 900;
-  font-size: 1.5vw;
-}
 .right-content > img {
-    max-width: 30vw;
-}
-.left-content {
-    grid-area: left;
-}
-.left-content > img {
-  max-width: 30vw;
+  max-width: 15vw;
 }
 
-.aufbau {
-    grid-area: aufbau;
-    text-align: center;
+.software {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  text-align: center;
+  border-bottom: 2px solid;
+  padding: 3.5vh;
 }
-#organigramm {
-  max-width: 80%;
+.software > img {
+  max-width: 30%;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.zaehler>img {
+  width: 30%;
+}
+.infoma {
+  grid-area: infoma;
+}
+.logoHR {
+  grid-area: logoHR;
+}
+.dvelop {
+  grid-area: dvelop;
+}
+.zaehler {
+  grid-area: zaehler;
+}
 
 .footer-items > div > img {
   max-width: 2vw;
@@ -154,30 +151,6 @@ footer {
   align-self: flex-start;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media (max-width: 1220px) {
   .grid {
     grid-template-columns: 170px 1fr;
@@ -186,6 +159,14 @@ footer {
     font-size: 2vw;
   }
 
+  .right-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-self: right;
+  }
+  .right-content > img {
+    max-width: auto;
+  }
 }
 
 @media (max-width: 1080px) {

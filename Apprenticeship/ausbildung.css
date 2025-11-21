@@ -17,16 +17,6 @@ h1 {
   grid-gap: 4px;
 }
 
-header {
-  background-color: #05386b;
-  grid-column: 1 / -1;
-  padding: 10px;
-  padding-left: 40px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  display: none;
-}
-
 .logos {
   display: flex;
   gap: 10px;
@@ -70,68 +60,24 @@ aside > div > a {
 }
 
 main {
-  background-color: #edf5e1;
+  background-color: #2f2fa2;
+  color: rgb(255, 255, 255);
   overflow-y: scroll;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: auto 1fr auto;
-  row-gap: 3vw;
-  grid-template-areas: 
-    "head head head"
-    "left central right"
-    "aufbau aufbau aufbau";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  align-self: right;
 }
 
-.central-content {
-  text-align: center;
-  padding: 1.5vw;
-  grid-area: central;
-}
-.right-content {
-  text-align: right;
-  grid-area: right;
-}
-.head-content {
-  grid-area: head;
-  padding-left: 1.5vw;
-}
-.head-content>h2 {
-  text-align: center;
-  font-weight: 900;
-  font-size: 1.5vw;
-}
-.right-content > img {
-    max-width: 30vw;
-}
 .left-content {
-    grid-area: left;
-}
-.left-content > img {
-  max-width: 30vw;
-}
-
-.aufbau {
-    grid-area: aufbau;
-    text-align: center;
-}
-#organigramm {
+  padding-left: 1.5vw;
   max-width: 80%;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+img {
+  max-width: 100%;
+  border-radius: 10vw;
+}
 
 .footer-items > div > img {
   max-width: 2vw;
@@ -154,30 +100,6 @@ footer {
   align-self: flex-start;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media (max-width: 1220px) {
   .grid {
     grid-template-columns: 170px 1fr;
@@ -186,6 +108,14 @@ footer {
     font-size: 2vw;
   }
 
+  .right-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-self: right;
+  }
+  .right-content > img {
+    max-width: auto;
+  }
 }
 
 @media (max-width: 1080px) {
